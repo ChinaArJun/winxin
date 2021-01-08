@@ -136,7 +136,7 @@ func AddNews(as []Article) (mediaId string, err error) {
 	return wrapper.MediaId, err
 }
 
-// UploadImg 上传图文消息内的图片获取URL
+// UploadImg 上传永久素材图文消息内的图片获取URL
 func UploadImg(file *os.File) (u string, err error) {
 	url := fmt.Sprintf(MaterialUploadImg, AccessToken())
 	wapper := &struct {
